@@ -8,7 +8,7 @@ export interface CardProps {
   average_height: number;
   average_lifespan: number;
   language: string;
-};
+}
 
 class Card extends React.Component<CardProps> {
   render() {

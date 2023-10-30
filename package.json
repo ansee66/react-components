@@ -10,13 +10,16 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "husky": {    
-   "hooks": {      
+  "husky": {
+    "hooks": {
       "pre-commit": "lint-staged"
-    }  
+    }
   },
   "lint-staged": {
-    "*.(ts|tsx)": ["npm run lint:write", "git add"]
+    "*.(ts|tsx)": [
+      "npm run lint:write",
+      "git add"
+    ]
   },
   "dependencies": {
     "react": "^18.2.0",
